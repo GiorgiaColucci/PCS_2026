@@ -4,7 +4,9 @@
 // stampo i risultati chiamando operator<< definito nell'header
 int main()
 {
+    //int a = 5;
     rational<int> a(-5,4);
+    //int b = 8;
     rational<int> b(2, 3);
     
     rational<int> sum1 = a + b;
