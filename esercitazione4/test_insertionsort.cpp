@@ -15,7 +15,7 @@ int main()
 	
 	std::vector<int> vec; 		//creo un unico vettore che ogni volta ridimensionerò, riempirò e testerò 
 	for (int i=0; i < 100; i++) {
-		vec.resize(i);
+		vec.resize(dim[i]);
 		rf.fill(vec, -10000, 10000);
 		insertionsort(vec);
 		
