@@ -14,7 +14,8 @@ public:
 	rational() : num_(0), den_(1) {}
 		
 	/* Costruttore user-defined */
-	rational(I n, I d) : num_(n), den_(d) 		{ normalize(); }
+	//prende n e lo copia dentro num_, che è quello che sto usando attualmente io; stessa cosa per d;
+	rational(I n, I d) : num_(n), den_(d) 		{ normalize(); }		
 	rational(I n) : num_(n), den_(1) { normalize(); }		//gestione interi
 
 	/* Restituiscono i valori di numeratore e denominatore */    
