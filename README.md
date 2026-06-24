@@ -2,7 +2,7 @@
 
 Questo repository documenta il percorso svolto durante il corso di Programmazione e Calcolo Scientifico (a.a. 2025/2026), raccogliendo esercitazioni e progetti sviluppati in C++ sui temi di programmazione generica, strutture dati, teoria dei grafi, algebra numerica e calcolo scientifico.
 
-Il repository mostra l'evoluzione da esercizi introduttivi sul linguaggio C++ fino allo sviluppo di un progetto completo per l'analisi automatica di circuiti elettrici mediante metodi numerici e algoritmi su grafi.
+Il lavoro culmina nello sviluppo di un progetto completo per l'analisi automatica di circuiti elettrici mediante metodi numerici e algoritmi su grafi.
 
 L'obiettivo principale del corso è l'acquisizione di competenze avanzate nel linguaggio C++ applicato alla risoluzione di problemi matematici, simulazioni numeriche e calcolo scientifico. 
 
@@ -13,7 +13,6 @@ L'obiettivo principale del corso è l'acquisizione di competenze avanzate nel li
 - **Build Systems:** CMake, Makefile
 - **Ambiente di sviluppo:** Version control tramite Git/GitHub
 - **Esportazione e visualizzazione dei grafi:** GraphViz (formato DOT).
-
 
 ---
 
@@ -50,12 +49,12 @@ I temi affrontati includono:
 - Algebra lineare numerica con Eigen
 - Metodi iterativi per sistemi lineari
 - Algoritmi avanzati per basi di cicli minimi (De Pina)
-- Visualizzazione di grafi tramite GraphViz
+- Visualizzazione di grafi tramite GraphViz (per esempi vedere nella build del prpgetto le immagini .png)
 
 ### 2. 🚀 Progetto Finale (`/Progetto`)
 Il nucleo principale del repository, che rappresenta l'applicazione pratica dei concetti del corso su un problema di calcolo scientifico reale.
 
-#### Competenze dimostrate
+#### Principali competenze software sviluppate
 
 - Progettazione di strutture dati generiche in C++20
 - Implementazione di grafi non orientati e algoritmi di visita
