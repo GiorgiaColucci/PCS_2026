@@ -25,6 +25,12 @@ Dato un circuito descritto in una **netlist**, il programma:
 - **g++** o **clang++** con supporto a C++20
 - **Eigen** ≥ 3.3 (libreria header-only per algebra lineare)
 
+## Documentazione
+
+La documentazione completa del progetto è disponibile nei file:
+
+- `progetto.pdf`
+- `Presentazione.pdf`
 
 ## Esecuzione
 
