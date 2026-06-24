@@ -166,7 +166,7 @@ pcs2026/
     |-- test_de_pina_helper.hpp     # supporto al test di De Pina
 ```
 
-## Algoritmi implementati
+## Fondaenti teorici e algoritmi implementati
 
 ### Metodo delle correnti di maglia
 
@@ -181,18 +181,22 @@ Dato un grafo del circuito con `m` resistori e `n` maglie:
    maglia.
 5. Le tensioni sui resistori si calcolano come **V_R = R B i**.
 
-### Calcolo dei cicli
+### Individuazione delle maglie
 
-Sono implementati **due algoritmi alternativi** (selezionabili a runtime):
+Per costruire il sistema delle correnti di maglia è necessario individuare una base di cicli del grafo associato al circuito.
 
-- **DFS + coalbero**: calcola un albero DFS *T* del grafo e prende il coalbero
-  *C = G \ T*. Per ogni arco di coalbero, il cammino tra i suoi estremi in *T*
-  chiuso dall'arco stesso forma un ciclo fondamentale. Non garantisce cicli
-  minimi.
+Sono implementati due **algoritmi alternativi** (selezionabili a runtime).
 
-- **De Pina**: usa algebra lineare su vettori booleani per
-  costruire una **base di cicli minimi**. Internamente utilizza un *lifting*
-  del grafo e Dijkstra per trovare i cicli più corti.
+#### DFS + coalbero
+Calcola un albero DFS *T* del grafo e prende il coalbero
+*C = G \ T*. Per ogni arco di coalbero, il cammino tra i suoi estremi in *T*
+chiuso dall'arco stesso forma un ciclo fondamentale. Non garantisce cicli
+minimi.
+
+#### Algoritmo di De Pina 
+Usa algebra lineare su vettori booleani per
+costruire una **base di cicli minimi**. Internamente utilizza un *lifting*
+del grafo e Dijkstra per trovare i cicli più corti.
 
 ## Tecniche utilizzate
 
