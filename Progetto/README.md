@@ -3,11 +3,13 @@
 Progetto di **Programmazione e Calcolo Scientifico** (a.a. 2025–2026).
 Implementazione in C++ del **metodo delle correnti di maglia** per la risoluzione
 di semplici circuiti elettrici composti da resistori e generatori ideali di
-tensione.
+tensione, sfruttando strumenti di teoria dei grafi e algebra lineare numerica.
+
+## Panoramica
 
 Dato un circuito descritto in una **netlist**, il programma:
-1. legge e valida la netlist;
-2. costruisce il grafo associato al circuito;
+1. legge e valida la netlist che descrie il circuito;
+2. costruisce il grafo associato;
 3. individua le maglie (cicli del grafo) con due algoritmi alternativi:
    **DFS + coalbero** (cicli fondamentali) oppure **De Pina** (cicli minimi);
 4. assembla il sistema lineare delle correnti di maglia e lo risolve con Eigen;
@@ -31,6 +33,34 @@ La documentazione completa del progetto è disponibile nei file:
 
 - `progetto.pdf`
 - `Presentazione.pdf`
+
+## Tecniche utilizzate
+
+Durante lo sviluppo sono stati implementati e utilizzati diversi algoritmi studiati nel corso:
+
+### Teoria dei grafi
+
+- Depth First Search (DFS)
+- Costruzione di alberi e coalberi
+- Ricerca di cicli fondamentali
+- Algoritmo di Dijkstra
+- Algoritmo di De Pina per la costruzione di una Minimum Cycle Basis
+
+### Algebra lineare numerica
+
+- Gradiente Coniugato
+- Risoluzione di sistemi lineari mediante Eigen
+
+## Contenuti del corso applicati
+
+- Programmazione C++
+- Strutture dati
+- Teoria dei grafi
+- Cammini minimi
+- Basi di cicli
+- Algebra lineare numerica
+- Metodi iterativi
+- Modellazione di circuiti elettrici
 
 ## Esecuzione
 
