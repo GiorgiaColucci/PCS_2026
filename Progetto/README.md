@@ -3,7 +3,7 @@
 Progetto di **Programmazione e Calcolo Scientifico** (a.a. 2025–2026).
 Questo progetto dimostra come strumenti di teoria dei grafi e algebra lineare possano essere combinati per risolvere problemi reali di analisi circuitale in modo automatico ed efficiente.
 Implementazione in C++ del **metodo delle correnti di maglia** per la risoluzione
-di semplici circuiti elettrici composti da resistori e generatori ideali di
+di circuiti elettrici composti da resistori e generatori ideali di
 tensione, sfruttando strumenti di teoria dei grafi e algebra lineare numerica.
 
 ## Panoramica
@@ -98,7 +98,6 @@ Restituisce **errore** (e termina) per:
 - indice di nodo non positivo;
 - nodo decimale non riconducibile a un intero;
 - resistenza pari a zero.
-- nodi decimali non riconducibili a interi
 
 ## Esempio
 
@@ -136,9 +135,9 @@ pcs2026/
 |-- CMakeLists.txt          
 |-- README.md                   
 |-- main.cpp                        # punto di ingresso del programma
-|-- prova.txt						# usato nei test 
+|-- prova.txt						            # usato nei test 
 |
-|-- include/                        # HEADER
+|-- include/                        # file header (intestazioni)
 |   |-- netlist_struct.hpp          # struct Componente, Output
 |   |-- edge.hpp                    # classe edge<T>: arco non orientato
 |   |-- graph.hpp                   # classe graph<T>: grafo non orientato
@@ -155,7 +154,7 @@ pcs2026/
 |   |-- stampa_archi.hpp            # stampa degli archi
 |   |-- stampa_grafi.hpp            # stampa dei grafi
 |
-|-- src/                            # FILE SORGENTE 
+|-- src/                            # file sorgente (implementazioni) 
 |   |-- netlist_parser.cpp           
 |   |-- grafo_construction.cpp       
 |   |-- cd_gradient.cpp             
@@ -201,9 +200,9 @@ del grafo e algoritmo di Dijkstra per trovare i cicli più corti.
 
 ## Testing
 
-Il progetto include test dedicati a:
+Il progetto include test unitari per:
 
-- parser della netlist;
+- parsing e validazione della netlist (20 casi di test);
 - costruzione del grafo;
 - algoritmo di De Pina.
 
@@ -216,11 +215,10 @@ La documentazione completa del progetto è disponibile nei file:
 - `progetto.pdf`
 - `Presentazione.pdf`
 
-
 ## Note
 
 - Le matrici prodotte dal solver sono di norma simmetriche e definite
   positive; si usa quindi il metodo del gradiente coniugato per risolvere il 
   sistema lineare.
 
-- Uso di AI generativa a progetto ultimato e compilante senza warning per analisi dei punti di forza e debolezza.
+- Strumenti di AI generativa sono stati utilizzati esclusivamente a progetto completato e compilante senza warning, per analisi dei punti di forza e di debolezza dell'implementazione.
