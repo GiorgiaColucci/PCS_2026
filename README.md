@@ -81,7 +81,7 @@ Durante lo sviluppo sono stati implementati e utilizzati diversi algoritmi studi
 - Metodi iterativi
 - Modellazione di circuiti elettrici
 
-- **Nota:** Per istruzioni dettagliate sull'architettura software del progetto, i requisiti matematici, le dipendenze e la procedura guidata di compilazione/esecuzione, si prega di fare riferimento al **[README specifico presente all'interno della cartella Progetto](./Progetto/)**.
+**Nota:** Per istruzioni dettagliate sull'architettura software del progetto, i requisiti matematici, le dipendenze e la procedura guidata di compilazione/esecuzione, si prega di fare riferimento al **[README specifico presente all'interno della cartella Progetto](./Progetto/)**.
 
 ---
 
