@@ -43,5 +43,5 @@ Il nucleo principale del repository, che rappresenta l'applicazione pratica dei 
 ---
 
 ## 👤 Autore
-- **Giorgia Colucci** - *Studentessa in ambito Calcolo Scientifico / Ingegneria*
+- **Giorgia Colucci** - *Studentessa in ambito Ingegneria*
 - GitHub: [@GiorgiaColucci](https://github.com/GiorgiaColucci)
